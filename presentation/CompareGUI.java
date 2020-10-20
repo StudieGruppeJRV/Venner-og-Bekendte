@@ -50,8 +50,4 @@ public class CompareGUI {
 		MenuGUI back = new MenuGUI();
 		back.start(primaryStage, vob);
 	}
-	private void backTest() {
-		MenuGUI back = new MenuGUI();
-		back.start(primaryStage, vob);
-	}
 }
