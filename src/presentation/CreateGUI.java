@@ -19,6 +19,7 @@ import logic.Ven;
 public class CreateGUI {
 	private Stage primaryStage;
 	private VOBInterface vob;
+	
 
 	public void start(Stage primaryStage, VOBInterface vob) {
 		this.primaryStage = primaryStage;
@@ -89,9 +90,6 @@ public class CreateGUI {
 		car.setPromptText("Bil");
 
 		
-		
-		
-		
 		//tilføj knap
 		Button add = new Button("Tilføj");
 		add.setFont(Font.font("Calibri", FontWeight.NORMAL, 20));
@@ -112,8 +110,12 @@ public class CreateGUI {
                 ven.setPhonenumber(phonenumber.getText());
                 ven.setCar(car.getText());
                 vob.create(ven);
+                
 				
-				
+            //Tekst ved tryk // ven.setFirstname??? 
+                Text scenetitle = new Text((firstname.getText() + " er nu tilføjet"));
+	             scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
+	             grid.add(scenetitle, 3, 10);	
 			}
 		});
 		
@@ -129,7 +131,7 @@ public class CreateGUI {
 	}
 
 	private void back() {
-		MenuGUI back = new MenuGUI();
+		presentation.MenuGUI back = new MenuGUI();
 		back.start(primaryStage, vob);
 
 	}

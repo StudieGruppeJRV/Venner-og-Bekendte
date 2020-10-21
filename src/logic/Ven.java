@@ -14,8 +14,8 @@ public class Ven {
 	public String getFirstname() {
 		return firstname;
 	}
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public String setFirstname(String firstname) {
+		return this.firstname = firstname;
 	}
 	
 public String getLastname() {
@@ -58,6 +58,11 @@ public String getCar() {
 	}
 	public void setCar(String car) {
 		this.car = car;
-	}
-	
+	}	
+	@Override
+	public String toString() {
+		return "Ven [firstname=" + firstname + ", lastname=" + lastname + ", dateOfBirth=" + dateOfBirth + ", email="
+				+ email + ", city=" + city + ", phonenumber=" + phonenumber + ", car=" + car + "]";
+}
+
 }

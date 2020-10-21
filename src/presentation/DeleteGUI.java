@@ -4,7 +4,6 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
@@ -47,7 +46,7 @@ public class DeleteGUI {
 	}
 	
 	private void back() {
-		MenuGUI back = new MenuGUI();
+		presentation.MenuGUI back = new MenuGUI();
 		back.start(primaryStage, vob);
 	}
 }

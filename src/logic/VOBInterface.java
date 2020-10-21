@@ -4,17 +4,17 @@ import java.util.List;
 
 public interface VOBInterface {
 	
-	public void create(Ven ven);
+	public void create(logic.Ven ven);
 	
 	public String read();
 	
 	public String update();
 	
-	public String delete();
+	public void delete(int i);
 	
-	public List<Ven> getAll();
+	public List<logic.Ven> getAll();
 	
-	public List<Ven> search (String search);
+	public List<logic.Ven> search (String search);
 	
 	public List<Ven> compare();
 }

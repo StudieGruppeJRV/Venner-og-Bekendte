@@ -9,9 +9,6 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import logic.VOBInterface;
-import logic.Ven;
-import logic.Venner;
 
 public class ReadSearchResultGUI {
 //private VOBInterface vob = new Venner();

@@ -13,21 +13,21 @@ import javafx.stage.Stage;
 import logic.VOBInterface;
 import logic.Venner;
 
-public class UpdateGUI {
+public class CompareGUI {
 	private Stage primaryStage;
 	private VOBInterface vob = new Venner();
 
 	public void start(Stage primaryStage) {
 		this.primaryStage = primaryStage;
 
-		primaryStage.setTitle("Update");
+		primaryStage.setTitle("Compare");
 		GridPane grid = new GridPane();
 		grid.setAlignment(Pos.CENTER);
 		grid.setHgap(50);
 		grid.setVgap(20);
 		grid.setPadding(new Insets(100, 100, 100, 100));
 
-		Text scenetitle = new Text("Opdater en ven");
+		Text scenetitle = new Text("Sammelign venner");
 		scenetitle.setFont(Font.font("Calibri", FontWeight.NORMAL, 50));
 		grid.add(scenetitle, 0, 0, 2, 1);
 
@@ -46,8 +46,7 @@ public class UpdateGUI {
 	}
 
 	private void back() {
-		MenuGUI back = new MenuGUI();
+		presentation.MenuGUI back = new MenuGUI();
 		back.start(primaryStage, vob);
 	}
-
 }

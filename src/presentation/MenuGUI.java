@@ -1,5 +1,6 @@
 package presentation;
 
+import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -11,7 +12,6 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import logic.VOBInterface;
-
 
 
 public class MenuGUI {
@@ -91,6 +91,15 @@ public class MenuGUI {
 		Scene scene = new Scene(grid, 800, 700);
 		primaryStage.setScene(scene);
 		primaryStage.show();
+		
+		//EXIT
+        Button exit = new Button("Luk program"); // CREATE KNAP
+        btn1.setFont(Font.font("Calibri", FontWeight.NORMAL, 20));
+        HBox hbexit = new HBox(12);
+        hbexit.setAlignment(Pos.BOTTOM_RIGHT);
+        hbexit.getChildren().add(exit);
+        grid.add(hbexit, 0, 20);
+        exit.setOnAction(e -> Platform.exit());
 	}
 
 	private void create() {
