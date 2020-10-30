@@ -1,6 +1,7 @@
 package logic;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,14 +9,23 @@ import data.FilWriter;
 
 
 public class Venner implements VOBInterface {
-	
-	private FilWriter fw = new FilWriter();
+
 	private List<logic.Ven> list = new ArrayList<logic.Ven>();
+
+	public Venner(){
+		try{
+			list=FilWriter.openFile();
+		}
+		catch (IOException e){
+			list= new ArrayList<>();
+		}
+	}
+
 	@Override
 	public void create(logic.Ven ven) {
 		list.add(ven);	
 		File file = new File("VenFil.csv");
-		fw.saveFile(file, list);
+		FilWriter.saveFile(list);
 	}
 	
 

@@ -110,9 +110,8 @@ public class CreateGUI {
                 ven.setPhonenumber(phonenumber.getText());
                 ven.setCar(car.getText());
                 vob.create(ven);
-                
-				
-            //Tekst ved tryk // ven.setFirstname??? 
+
+				//Tekst ved tryk // ven.setFirstname???
                 Text scenetitle = new Text((firstname.getText() + " er nu tilføjet"));
 	             scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
 	             grid.add(scenetitle, 3, 10);	

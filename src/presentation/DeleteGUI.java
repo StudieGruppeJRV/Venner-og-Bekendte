@@ -20,14 +20,14 @@ public class DeleteGUI {
 	public void start(Stage primaryStage) {
 	this.primaryStage = primaryStage;
 	
-	primaryStage.setTitle("Update");
+	primaryStage.setTitle("Delete");
 	GridPane grid = new GridPane();
 	grid.setAlignment(Pos.CENTER);
 	grid.setHgap(50);
 	grid.setVgap(20);
 	grid.setPadding(new Insets(100, 100, 100, 100));
 
-	Text scenetitle = new Text("Opdater en ven");
+	Text scenetitle = new Text("Slet en ven");
 	scenetitle.setFont(Font.font("Calibri", FontWeight.NORMAL, 50));
 	grid.add(scenetitle, 0, 0, 2, 1);
 

@@ -26,7 +26,7 @@ public class MainVB extends Application {
 
 	public void start(Stage primaryStage) {
 		this.primaryStage = primaryStage;
-		
+
 
 		// overskrift
 		primaryStage.setTitle("Welcome");
@@ -34,14 +34,14 @@ public class MainVB extends Application {
 		grid.setAlignment(Pos.CENTER);
 		grid.setPadding(new Insets(25, 25, 25, 25));
 		Text scenetitle = new Text("    Velkommen");
-		scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
+		scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 50));
 		grid.add(scenetitle, 0, 0, 2, 1);
-		Label tilTitel = new Label("          til");
+		Label tilTitel = new Label("                til");
 		grid.add(tilTitel, 0, 2);
-		tilTitel.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
+		tilTitel.setFont(Font.font("Tahoma", FontWeight.NORMAL, 30));
 		Label venTitel = new Label("Venner og Bekendte");
 		grid.add(venTitel, 0, 3);
-		venTitel.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
+		venTitel.setFont(Font.font("Tahoma", FontWeight.NORMAL, 40));
 
 		Scene scene = new Scene(grid, 800, 700);
 		primaryStage.setScene(scene);
@@ -49,8 +49,8 @@ public class MainVB extends Application {
 			
 		// Start Knap
 		Button begin = new Button("Start");
-		begin.setFont(Font.font("Calibri", FontWeight.NORMAL, 10));
-		HBox hbBtn = new HBox(10);
+		begin.setFont(Font.font("Calibri", FontWeight.NORMAL, 25));
+		HBox hbBtn = new HBox(25);
 		hbBtn.setAlignment(Pos.BOTTOM_RIGHT);
 		hbBtn.getChildren().add(begin);
 		grid.add(hbBtn, 1, 4);
