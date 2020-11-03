@@ -3,6 +3,8 @@ package logic;
 import java.util.List;
 
 public interface VOBInterface {
+
+	public List<String> getFirstnameList();
 	
 	public void create(logic.Ven ven);
 	

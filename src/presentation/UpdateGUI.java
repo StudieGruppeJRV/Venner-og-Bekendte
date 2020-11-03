@@ -1,9 +1,13 @@
 package presentation;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.ListView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
@@ -11,7 +15,11 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import logic.VOBInterface;
+import logic.Ven;
 import logic.Venner;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class UpdateGUI {
 	private Stage primaryStage;
@@ -34,6 +42,11 @@ public class UpdateGUI {
 		Scene scene = new Scene(grid, 800, 700);
 		primaryStage.setScene(scene);
 		primaryStage.show();
+
+		ListView<String> listView = new ListView<String>();
+		for (String fname : vob.getFirstnameList()){
+			listView.getItems().addAll(fname);
+		}
 
 		// Tilbage knap
 		Button back = new Button("Tilbage");

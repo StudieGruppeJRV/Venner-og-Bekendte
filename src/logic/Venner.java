@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import data.FilWriter;
 
@@ -19,6 +20,12 @@ public class Venner implements VOBInterface {
 		catch (IOException e){
 			list= new ArrayList<>();
 		}
+	}
+
+
+	@Override
+	public List<String> getFirstnameList() {
+		return list.stream().map(Ven::getFirstname).collect(Collectors.toList());
 	}
 
 	@Override
