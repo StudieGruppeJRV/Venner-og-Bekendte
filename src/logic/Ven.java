@@ -7,7 +7,7 @@ public class Ven {
 	private String dateOfBirth;
 	private String email;
 	private String city;
-	private String phonenumber;
+	private String phoneNumber;
 	private String car;
 	
 	
@@ -46,11 +46,11 @@ public class Ven {
 		this.city = city;
 	}
 	
-	public String getPhonenumber() {
-		return phonenumber;
+	public String getPhoneNumber() {
+		return phoneNumber;
 	}
-	public void setPhonenumber(String phonenumber) {
-		this.phonenumber = phonenumber;
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 	
 	public String getCar() {
@@ -62,7 +62,7 @@ public class Ven {
 	@Override
 	public String toString() {
 		return "Ven [firstname=" + firstname + ", lastname=" + lastname + ", dateOfBirth=" + dateOfBirth + ", email="
-				+ email + ", city=" + city + ", phonenumber=" + phonenumber + ", car=" + car + "]";
+				+ email + ", city=" + city + ", phonenumber=" + phoneNumber + ", car=" + car + "]";
 }
 
 }

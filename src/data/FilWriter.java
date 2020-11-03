@@ -86,7 +86,7 @@ public class FilWriter {
                     ven.setDateOfBirth(map.get("dateOfBirth"));
                     ven.setEmail(map.get("email"));
                     ven.setCity(map.get("city"));
-                    ven.setPhonenumber(map.get("phonenumber"));
+                    ven.setPhoneNumber(map.get("phoneNumber"));
                     ven.setCar(map.get("car"));
 
                     return ven;

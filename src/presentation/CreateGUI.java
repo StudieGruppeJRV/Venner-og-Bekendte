@@ -76,11 +76,11 @@ public class CreateGUI {
 		city.setPromptText("By");
 		
 		//mobilnr
-		TextField phonenumber = new TextField();
-		grid.add(phonenumber, 0, 8);
-		phonenumber.setAlignment(Pos.BASELINE_LEFT);
-		phonenumber.setFocusTraversable(false);
-		phonenumber.setPromptText("Mobil Nr.");
+		TextField phoneNumber = new TextField();
+		grid.add(phoneNumber, 0, 8);
+		phoneNumber.setAlignment(Pos.BASELINE_LEFT);
+		phoneNumber.setFocusTraversable(false);
+		phoneNumber.setPromptText("Mobil Nr.");
 		
 		//Bil
 		TextField car = new TextField();
@@ -107,7 +107,7 @@ public class CreateGUI {
                 ven.setDateOfBirth(dateofbirth.getText());
                 ven.setEmail(email.getText());
                 ven.setCity(city.getText());
-                ven.setPhonenumber(phonenumber.getText());
+                ven.setPhoneNumber(phoneNumber.getText());
                 ven.setCar(car.getText());
                 vob.create(ven);
 
@@ -117,8 +117,7 @@ public class CreateGUI {
 	             grid.add(scenetitle, 3, 10);	
 			}
 		});
-		
-		
+
 		// Tilbage knap
 		Button back = new Button("Tilbage");
 		back.setFont(Font.font("Calibri", FontWeight.NORMAL, 20));
