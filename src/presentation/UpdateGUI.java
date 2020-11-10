@@ -43,10 +43,10 @@ public class UpdateGUI {
 		primaryStage.setScene(scene);
 		primaryStage.show();
 
-		ListView<String> listView = new ListView<String>();
-		for (String fname : vob.getFirstnameList()){
-			listView.getItems().addAll(fname);
-		}
+		//ListView<String> listView = new ListView<String>();
+		//for (String fname : vob.getFirstnameList()){
+		//	listView.getItems().addAll(fname);
+		//}
 
 		// Tilbage knap
 		Button back = new Button("Tilbage");

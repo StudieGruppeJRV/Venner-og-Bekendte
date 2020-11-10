@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import data.FilWriter;
+import data.FileManager;
 
 
 public class Venner implements VOBInterface {
@@ -15,7 +15,7 @@ public class Venner implements VOBInterface {
 
 	public Venner(){
 		try{
-			list=FilWriter.openFile();
+			list = FileManager.openFile();
 		}
 		catch (IOException e){
 			list= new ArrayList<>();
@@ -32,7 +32,7 @@ public class Venner implements VOBInterface {
 	public void create(logic.Ven ven) {
 		list.add(ven);	
 		File file = new File("VenFil.csv");
-		FilWriter.saveFile(list);
+		FileManager.saveFile(list);
 	}
 	
 

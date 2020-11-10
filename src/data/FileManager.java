@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import javafx.util.Pair;
 import logic.Ven;
 
-public class FilWriter {
+public class FileManager {
 
     public static void saveFile(List<Ven> list) {
         try (FileWriter filew = new FileWriter("VenFil.csv")) {
@@ -19,7 +19,6 @@ public class FilWriter {
             output.close();
         } catch (IOException e) {
             e.printStackTrace();
-
         }
     }
 
